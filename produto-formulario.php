@@ -24,14 +24,19 @@
 			<tr>
 				<td>Categoria</td>
 				<td>
+					<select name="categoria_id" class="form-control">
 					<?php
 						 foreach($categorias as $categoria):
 					 ?>
-						<div class="radio-inline">
-							<input type="radio" name="categoria_id" value="<?=$categoria['id']?>"><?=$categoria['nome']?>
-						</div>
+						<option value="<?=$categoria['id']?>
+									 "><?=$categoria['nome']?>
+						</option>
 				 	<?php endforeach?>
+				 	</select>
 			 	</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox" name="usado" value="true">Usado</td>	
 			</tr>
 			<tr>
 				<td><input type="submit" value="Cadastrar" class="btn btn-primary"></td>
