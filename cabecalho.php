@@ -1,3 +1,6 @@
+ <?php 
+ 		include ('mostra-alerta.php');
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,3 +28,7 @@
 
 	<div class="container">
 		<div class="principal">
+<?php 
+	mostraAlerta("success");
+  	mostraAlerta("danger");
+?>

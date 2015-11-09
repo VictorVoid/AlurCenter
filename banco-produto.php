@@ -12,13 +12,11 @@
 		}
 		return $produtos;
 	}
-
 	function insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado){
 		$query = "INSERT INTO produtos (nome, preco, descricao, categoria_id, usado) values ('{$nome}','{$preco}', '{$descricao}', '{$categoria_id}','{$usado}')";
 		$resultadoDaInsercao = mysqli_query($conexao, $query);
 		return $resultadoDaInsercao;
 	}
-
 	function removeProduto($conexao, $id){
 		$query = "DELETE from produtos WHERE id=$id";
 		return mysqli_query($conexao, $query);
