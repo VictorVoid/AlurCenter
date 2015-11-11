@@ -13,6 +13,9 @@
 		return $produtos;
 	}
 	function insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usado){
+		$nome  = mysqli_escape_string($conexao,$nome);
+		$preco = mysqli_escape_string($conexao,$preco);
+		$descricao = mysqli_escape_string($conexao,$descricao);
 		$query = "INSERT INTO produtos (nome, preco, descricao, categoria_id, usado) values ('{$nome}','{$preco}', '{$descricao}', '{$categoria_id}','{$usado}')";
 		$resultadoDaInsercao = mysqli_query($conexao, $query);
 		return $resultadoDaInsercao;
