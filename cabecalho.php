@@ -1,5 +1,5 @@
  <?php 
- 		include ('mostra-alerta.php');
+ 		require_once ('mostra-alerta.php');
  ?>
 <!DOCTYPE html>
 <html lang="en">

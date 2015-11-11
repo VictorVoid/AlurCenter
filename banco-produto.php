@@ -1,4 +1,4 @@
-<?php
+<?php	  require_once ('conecta.php');
 	/* **************************
 		BANCO DE DADOS DOS PRODUTOS
 	   **************************
