@@ -6,16 +6,15 @@
 	  $usado = "";
 	  $categorias = listaCategorias($conexao);
 ?>	
-				<h1>Formulário de produto</h1>
-			
-	<form action="adiciona-produto.php" method="post">
-		<table class="table">
+	<div class="row">
+		<div class="col-sm-8">
+			<h1 class="text-primary">Formulário de produto</h1>
+		</div>
+	</div>	
+	<form action="adiciona-produto.php" method="post" class="form-horizontal">
 			<?php include ('produto-formulario-base.php'); ?>
-			<tr>
-				<td><input type="submit" value="Cadastrar" class="btn btn-primary"></td>
-			</tr>
 			
-		</table>
+		<input type="submit" value="Cadastrar" class="btn btn-primary"></td>
 	</form>
 
 <?php include ('rodape.php');?>

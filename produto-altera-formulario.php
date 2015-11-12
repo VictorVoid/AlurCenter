@@ -9,15 +9,11 @@
 	  $usado 	  = $produto['usado'] ? "checked='checked'":"";
 ?>	
 				<h1>Alterando produto</h1>			
-	<form action="altera-produto.php" method="post">
+	<form action="altera-produto.php" method="post" class="form-horizontal">
 		<input type="hidden" name="id" value="<?= $produto['id']?>" >
-		<table class="table">
-				<?php include ('produto-formulario-base.php');?>
-			<tr>
-				<td><input type="submit" value="Alterar" class="btn btn-primary"></td>
-			</tr>
-			
-		</table>
+		
+		<?php include ('produto-formulario-base.php');?>
+		<input type="submit" value="Alterar" class="btn btn-danger btn-lg">		
 	</form>
 
 <?php include ('rodape.php');?>

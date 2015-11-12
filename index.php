@@ -1,27 +1,26 @@
 <?php 	require_once ('logica-usuario.php');
 		require_once ('cabecalho.php');
 ?>
-	<h1> Bem vindo!</h1>
 
 	<?php if (usuarioEstaLogado()){?>
 	  		<p class="text-success">Você está logado como <?=usuarioLogado();?>
 	  		<a href="logout.php">Deslogar</a></p>
 	<?php }else{?>
-	<h2>Login</h2>
-	<form action="login.php" method="post">
-		<table class="table">
-			<tr>
-				<td>Email</td>
-				<td><input type="text" name="email" class="form-control"></td>
-			</tr>
-			<tr>
-				<td>Senha</td>
-				<td><input type="password" name="senha" class="form-control"></td>
-			</tr>
-			<td>
-				<td><button class="btn btn-primary">Login</button></td>
-			</td>
-		</table>
-	</form>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<p class="text-danger"> Login do ADMIN</p>
+				<form class="form-inline" action="login.php" method="post">
+					 <div class="form-group">
+					    <label for="idmail">Email</label>
+					    <input type="email" class="form-control" name="email" id="idmail" placeholder="jane.doe@example.com">
+					 </div>
+					  <div class="form-group">
+					    <label for="idsenha">Senha</label>
+					    <input type="password" class="form-control" name="senha" id="idsenha">
+					 </div>
+					 <button type="submit" class="btn btn-primary">Login</button>
+				</form>
+			</div>
+		</div>
 	<?php }?>
 <?php include ('rodape.php');?>
