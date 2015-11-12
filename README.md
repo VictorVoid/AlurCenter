@@ -21,4 +21,4 @@ Info
 
 
     Lista os itens de forma simples, usando tabela. 
-![](ttps://raw.githubusercontent.com/VictorVoid/loja-alur/master/printscreen/responsive-alurCenter03.png)
+![](https://raw.githubusercontent.com/VictorVoid/loja-alur/master/printscreen/responsive-alurCenter03.png)
